@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Menu - Lunchbylaa</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="profile-section">
+            <a href="index.html" class="nav-btn back">⬅ Kembali</a>
+            <h1>Lunchbylaa</h1>
+            <img src="lunchbylaa.png" alt="Profile" class="profile-pic">
+        </div>
+        <input type="text" placeholder="🔍 Stik, Ricebowl, Kembang Goyang" class="search-bar">
+    </header>
+    
+  
+    <section class="menu-container">
+        <h2>PRODUK TERLARIS</h2>        
+        <div class="menu-list" id="produk-terlaris">
+            <div class="menu-item" id="menu1">
+                <img src="tambahmenu.jpg" alt="Menu Image" id="img1">
+                <span id="name1" class="menu-name">Stik Keju</p>
+                <span id="size1" class="menu-type">Plastik 150gr</p>
+                <span id="price1" class="menu-price">Rp. 20.000</p>
+                <button class="edit-btn" onclick="openPopup('menu1')">✏️</button>
+            </div>
+            <div class="menu-item" id="menu2">
+                <img src="tambahmenu.jpg" alt="Menu Image" id="img2">
+                <span id="name2" class="menu-name">Kembang Goyang</p>
+                <span id="size2" class="menu-type">Plastik 100gr</p>
+                <span id="price2" class="menu-price">Rp. 20.000</p>
+                <button class="edit-btn" onclick="openPopup('menu2')">✏️</button>
+        </div>
+    </section>
+
+   
+    <section class="menu-container">
+        <h2>STIK</h2>
+        <h3>STIK KEJU</h3>
+        <div class="menu-list" id="produk-terlaris">
+            <div class="menu-item">
+                <img src="tambahmenu.jpg" alt="Menu Image">
+                <p class="menu-name">Stik Keju</p>
+                <p class="menu-type">Plastik 150gr</p>
+                <p class="menu-price">Rp. 20.000</p>
+                <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+            </div>
+            <div class="menu-item">
+                <img src="tambahmenu.jpg" alt="Menu Image">
+                <p class="menu-name">Stik Keju</p>
+                <p class="menu-type">Toples 1000ml</p>
+                <p class="menu-price">Rp. 25.000</p>
+                <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+        </div>
+    </section>
+
+    <section class="menu-container">
+        <div class="menu-list" id="produk-terlaris">
+            <div class="menu-item">
+                <img src="tambahmenu.jpg" alt="Menu Image">
+                <p class="menu-name">Stik Keju</p>
+                <p class="menu-type">Toples 1300ml</p>
+                <p class="menu-price">Rp. 30.000</p>
+                <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+            </div>
+            <div class="menu-item">
+                <img src="tambahmenu.jpg" alt="Menu Image">
+                <p class="menu-name">Stik Keju</p>
+                <p class="menu-type">Toples 5lt</p>
+                <p class="menu-price">Rp. 80.000</p>
+                <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+        </div>
+    </section>
+
+
+    <section class="menu-container">
+        <h3>STIK WORTEL</h3>
+        <div class="menu-list" id="produk-terlaris">
+            <div class="menu-item">
+                <img src="tambahmenu.jpg" alt="Menu Image">
+                <p class="menu-name">Stik Wortel</p>
+                <p class="menu-type">Plastik 150gr</p>
+                <p class="menu-price">Rp. 15.000</p>
+                <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+            </div>
+            <div class="menu-item">
+                <img src="tambahmenu.jpg" alt="Menu Image">
+                <p class="menu-name">Stik Wortel</p>
+                <p class="menu-type">Toples 1000ml</p>
+                <p class="menu-price">Rp. 25.000</p>
+                <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+        </div>
+    </section>
+
+    <section class="menu-container">
+        <div class="menu-list" id="produk-terlaris">
+            <div class="menu-item">
+                <img src="tambahmenu.jpg" alt="Menu Image">
+                <p class="menu-name">Stik Wortel</p>
+                <p class="menu-type">Toples 1300ml</p>
+                <p class="menu-price">Rp. 28.000</p>
+                <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+            </div>
+            <div class="menu-item">
+                <img src="tambahmenu.jpg" alt="Menu Image">
+                <p class="menu-name">Stik Wortel</p>
+                <p class="menu-type">Toples 5lt</p>
+                <p class="menu-price">Rp. 70.000</p>
+                <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+        </div>
+    </section>
+
+
+
+<section class="menu-container">
+    <h3>STIK BAYAM</h3>
+    <div class="menu-list" id="produk-terlaris">
+        <div class="menu-item">
+            <img src="tambahmenu.jpg" alt="Menu Image">
+            <p class="menu-name">Stik Bayam</p>
+            <p class="menu-type">Plastik 150gr</p>
+            <p class="menu-price">Rp. 15.000</p>
+            <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+        </div>
+        <div class="menu-item">
+            <img src="tambahmenu.jpg" alt="Menu Image">
+            <p class="menu-name">Stik Bayam</p>
+            <p class="menu-type">Toples 1000ml</p>
+            <p class="menu-price">Rp. 25.000</p>
+            <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+    </div>
+</section>
+
+<section class="menu-container">
+    <div class="menu-list" id="produk-terlaris">
+        <div class="menu-item">
+            <img src="tambahmenu.jpg" alt="Menu Image">
+            <p class="menu-name">Stik Bayam</p>
+            <p class="menu-type">Toples 1300ml</p>
+            <p class="menu-price">Rp. 28.000</p>
+            <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+        </div>
+        <div class="menu-item">
+            <img src="tambahmenu.jpg" alt="Menu Image">
+            <p class="menu-name">Stik Bayam</p>
+            <p class="menu-type">Toples 5lt</p>
+            <p class="menu-price">Rp. 70.000</p>
+            <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+    </div>
+</section>
+
+<section class="menu-container">
+    <h3>STIK UBI UNGU</h3>
+    <div class="menu-list" id="produk-terlaris">
+        <div class="menu-item">
+            <img src="tambahmenu.jpg" alt="Menu Image">
+            <p class="menu-name">Ubi Ungu</p>
+            <p class="menu-type">Plastik 150gr</p>
+            <p class="menu-price">Rp. 15.000</p>
+            <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+        </div>
+        <div class="menu-item">
+            <img src="tambahmenu.jpg" alt="Menu Image">
+            <p class="menu-name">Ubi Ungu</p>
+            <p class="menu-type">Toples 1000ml</p>
+            <p class="menu-price">Rp. 25.000</p>
+            <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+    </div>
+</section>
+
+<section class="menu-container">
+    <div class="menu-list" id="produk-terlaris">
+        <div class="menu-item">
+            <img src="tambahmenu.jpg" alt="Menu Image">
+            <p class="menu-name">Ubi Ungu</p>
+            <p class="menu-type">Toples 1300ml</p>
+            <p class="menu-price">Rp. 28.000</p>
+            <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+        </div>
+        <div class="menu-item">
+            <img src="tambahmenu.jpg" alt="Menu Image">
+            <p class="menu-name">Ubi Ungu</p>
+            <p class="menu-type">Toples 5lt</p>
+            <p class="menu-price">Rp. 70.000</p>
+            <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+    </div>
+</section>
+
+
+<section class="menu-container">
+    <h2>KEMBANG GOYANG</h2>        
+    <div class="menu-list" id="produk-terlaris">
+        <div class="menu-item">
+            <img src="tambahmenu.jpg" alt="Menu Image">
+            <p class="menu-name">Kembang Goyang</p>
+            <p class="menu-type">Plastik</p>
+            <p class="menu-price">Rp. 20.000</p>
+            <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+        </div>
+        <div class="menu-item">
+            <img src="tambahmenu.jpg" alt="Menu Image">
+            <p class="menu-name">Kembang Goyang</p>
+            <p class="menu-type">Toples 1000ml</p>
+            <p class="menu-price">Rp. 20.000</p>
+            <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+    </div>
+</section>
+
+<section class="menu-container">
+       
+    <div class="menu-list" id="produk-terlaris">
+        <div class="menu-item">
+            <img src="tambahmenu.jpg" alt="Menu Image">
+            <p class="menu-name">Kembang Goyang</p>
+            <p class="menu-type">Toples 1300ml</p>
+            <p class="menu-price">Rp. 25.000</p>
+            <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+        </div>
+        <div class="menu-item">
+            <img src="tambahmenu.jpg" alt="Menu Image">
+            <p class="menu-name">Kembang Goyang</p>
+            <p class="menu-type">Toples 5lt</p>
+            <p class="menu-price">Rp. 50.000</p>
+            <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+    </div>
+</section>
+
+<section class="menu-container">
+       
+    <div class="menu-list" id="produk-terlaris">
+        <div class="menu-item">
+            <img src="tambahmenu.jpg" alt="Menu Image">
+            <p class="menu-name">Kembang Goyang</p>
+            <p class="menu-type">Toples 10lt</p>
+            <p class="menu-price">Rp. 100.000</p>
+            <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+        </div>
+</section>
+
+
+<section class="menu-container">
+    <h2>CIPUT</h2>        
+    <div class="menu-list" id="produk-terlaris">
+        <div class="menu-item">
+            <img src="tambahmenu.jpg" alt="Menu Image">
+            <p class="menu-name">Ciput</p>
+            <p class="menu-type">Plastik</p>
+            <p class="menu-price">Rp. 20.000</p>
+            <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+        </div>
+        <div class="menu-item">
+            <img src="tambahmenu.jpg" alt="Menu Image">
+            <p class="menu-name">Ciput</p>
+            <p class="menu-type">Toples 750ml</p>
+            <p class="menu-price">Rp. 25.000</p>
+            <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+    </div>
+</section>
+
+<section class="menu-container">       
+    <div class="menu-list" id="produk-terlaris">
+        <div class="menu-item">
+            <img src="tambahmenu.jpg" alt="Menu Image">
+            <p class="menu-name">Ciput</p>
+            <p class="menu-type">Toples 1000ml</p>
+            <p class="menu-price">Rp. 30.000</p>
+            <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+        </div>
+        <div class="menu-item">
+            <img src="tambahmenu.jpg" alt="Menu Image">
+            <p class="menu-name">Ciput</p>
+            <p class="menu-type">Toples 1300ml</p>
+            <p class="menu-price">Rp. 35.000</p>
+            <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+    </div>
+</section>
+
+
+<section class="menu-container">
+    <h2>KACANG BAWANG</h2>        
+    <div class="menu-list" id="produk-terlaris">
+        <div class="menu-item">
+            <img src="tambahmenu.jpg" alt="Menu Image">
+            <p class="menu-name">Kacang Bawang</p>
+            <p class="menu-type">Toples 600ml</p>
+            <p class="menu-price">Rp. 35.000</p>
+            <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+        </div>
+        <div class="menu-item">
+            <img src="tambahmenu.jpg" alt="Menu Image">
+            <p class="menu-name">Kacang Bawang</p>
+            <p class="menu-type">Toples 1000ml</p>
+            <p class="menu-price">Rp. 45.000</p>
+            <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+    </div>
+</section>
+
+
+<section class="menu-container">
+    <h2>ULAT SUTRA</h2>        
+    <div class="menu-list" id="produk-terlaris">
+        <div class="menu-item">
+            <img src="tambahmenu.jpg" alt="Menu Image">
+            <p class="menu-name">Kacang Bawang</p>
+            <p class="menu-type">Plastik</p>
+            <p class="menu-price">Rp. 15.000</p>
+            <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+        </div>
+        <div class="menu-item">
+            <img src="tambahmenu.jpg" alt="Menu Image">
+            <p class="menu-name">Kacang Bawang</p>
+            <p class="menu-type">Toples 1000ml</p>
+            <p class="menu-price">Rp. 20.000</p>
+            <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+    </div>
+</section>
+
+<section class="menu-container">     
+    <div class="menu-list" id="produk-terlaris">
+        <div class="menu-item">
+            <img src="tambahmenu.jpg" alt="Menu Image">
+            <p class="menu-name">Kacang Bawang</p>
+            <p class="menu-type">Toples 1300ml</p>
+            <p class="menu-price">Rp. 25.000</p>
+            <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+        </div>
+        <div class="menu-item">
+            <img src="tambahmenu.jpg" alt="Menu Image">
+            <p class="menu-name">Kacang Bawang</p>
+            <p class="menu-type">Toples 5lt</p>
+            <p class="menu-price">Rp. 75.000</p>
+            <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+    </div>
+</section>
+
+<section class="menu-container">
+    <h2>PEYEK KACANG</h2>   
+    <div class="menu-list" id="produk-terlaris">
+        <div class="menu-item">
+            <img src="tambahmenu.jpg" alt="Menu Image">
+            <p class="menu-name">Peyek Kacang</p>
+            <p class="menu-type">Plastik</p>
+            <p class="menu-price">Rp. 25.000</p>
+            <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+        </div>
+        <div class="menu-item">
+            <img src="tambahmenu.jpg" alt="Menu Image">
+            <p class="menu-name">Peyek Kacang</p>
+            <p class="menu-type">Toples 5lt</p>
+            <p class="menu-price">Rp. 50.000</p>
+            <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+    </div>
+</section>
+
+<section class="menu-container">
+       
+    <div class="menu-list" id="produk-terlaris">
+        <div class="menu-item">
+            <img src="tambahmenu.jpg" alt="Menu Image">
+            <p class="menu-name">Peyek Kacang</p>
+            <p class="menu-type">Toples 10lt</p>
+            <p class="menu-price">Rp. 100.000</p>
+            <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+        </div>
+</section>
+
+
+<section class="menu-container">
+    <h2>PEYEK TERI</h2>   
+    <div class="menu-list" id="produk-terlaris">
+        <div class="menu-item">
+            <img src="tambahmenu.jpg" alt="Menu Image">
+            <p class="menu-name">Peyek Teri</p>
+            <p class="menu-type">Plastik</p>
+            <p class="menu-price">Rp. 25.000</p>
+            <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+        </div>
+        <div class="menu-item">
+            <img src="tambahmenu.jpg" alt="Menu Image">
+            <p class="menu-name">Peyek Teri</p>
+            <p class="menu-type">Toples 5lt</p>
+            <p class="menu-price">Rp. 50.000</p>
+            <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+    </div>
+</section>
+
+<section class="menu-container">
+       
+    <div class="menu-list" id="produk-terlaris">
+        <div class="menu-item">
+            <img src="tambahmenu.jpg" alt="Menu Image">
+            <p class="menu-name">Peyek Teri</p>
+            <p class="menu-type">Toples 10lt</p>
+            <p class="menu-price">Rp. 100.000</p>
+            <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+        </div>
+</section>
+
+
+<section class="menu-container">
+    <h2>RICE BOWL</h2>   
+    <div class="menu-list" id="produk-terlaris">
+        <div class="menu-item">
+            <img src="tambahmenu.jpg" alt="Menu Image">
+            <p class="menu-name">Rice Bowl</p>
+            <p class="menu-type">Ayam Katsu</p>
+            <p class="menu-price">Rp. 13.000</p>
+            <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+        </div>
+        <div class="menu-item">
+            <img src="tambahmenu.jpg" alt="Menu Image">
+            <p class="menu-name">Rice Bowl</p>
+            <p class="menu-type">Ayam Teriyaki</p>
+            <p class="menu-price">Rp. 13.000</p>
+            <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+    </div>
+</section>
+
+
+<section class="menu-container">
+    <h2>NASI KOTAK</h2>   
+    <div class="menu-list" id="produk-terlaris">
+        <div class="menu-item">
+            <img src="tambahmenu.jpg" alt="Menu Image">
+            <p class="menu-name">Nasi Kotak</p>
+            <p class="menu-price">Rp. 15.000</p>
+            <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+</section>
+ 
+<section class="menu-container">
+    <h2>BUAH POTONG</h2>        
+    <div class="menu-list" id="produk-terlaris">
+        <div class="menu-item">
+            <img src="tambahmenu.jpg" alt="Menu Image">
+            <p class="menu-name">Buah Potong</p>
+            <p class="menu-type">Semangka 200gr</p>
+            <p class="menu-price">Rp. 10.000</p>
+            <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+        </div>
+        <div class="menu-item">
+            <img src="tambahmenu.jpg" alt="Menu Image">
+            <p class="menu-name">Buah Potong</p>
+            <p class="menu-type">Melon 200gr</p>
+            <p class="menu-price">Rp. 10.000</p>
+            <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+    </div>
+</section>
+
+<section class="menu-container">
+       
+    <div class="menu-list" id="produk-terlaris">
+        <div class="menu-item">
+            <img src="tambahmenu.jpg" alt="Menu Image">
+            <p class="menu-name">Buah Potong</p>
+            <p class="menu-type">Mangga 150gr</p>
+            <p class="menu-price">Rp. 10.000</p>
+            <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+        </div>
+        <div class="menu-item">
+            <img src="tambahmenu.jpg" alt="Menu Image">
+            <p class="menu-name">Buah Potong</p>
+            <p class="menu-type">Bengkuang 200gr</p>
+            <p class="menu-price">Rp. 5.000</p>
+            <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+    </div>
+</section>
+
+<section class="menu-container">
+       
+    <div class="menu-list" id="produk-terlaris">
+        <div class="menu-item">
+            <img src="tambahmenu.jpg" alt="Menu Image">
+            <p class="menu-name">Buah Potong</p>
+            <p class="menu-type">Pepaya 200gr</p>
+            <p class="menu-price">Rp. 7.000</p>
+            <button class="edit-btn" onclick="toggleEditMenu(this)">✏️</button>
+        </div>
+</section>
+
+    
+    <div class="popup" id="popup">
+        <input type="file" id="fileInput" accept="image/*" onchange="updateImage()">
+        <button onclick="editImage()">Edit Gambar Menu</button>
+        <button onclick="editName()">Edit Nama & Kemasan Menu</button>
+        <button onclick="editPrice()">Edit Harga Menu</button>
+        <button onclick="closePopup()">Tutup</button>
+    </div>
+</body>
+</html>
+
+<style>
+    body {
+        background-color: #ffccde;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* Container utama dengan border yang lebih tegas */
+    .main-container {
+        background: white;
+        padding: 20px;
+        border-radius: 15px;
+        border: 4px solid #d42a6e; /* Warna border lebih tegas dan kontras */
+        box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2);
+        width: 90%;
+        max-width: 600px;
+    }
+ 
+    /* Header di dalam container utama agar menyatu */
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 15px;
+        border-bottom: 3px solid #d42a6e; /* Garis pemisah antara header dan menu */
+    }
+
+    /* Profil dan logo */
+    .profile-section {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .profile-pic {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    /* Search bar */
+    .search-bar {
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        border: 2px solid #d42a6e; /* Border input agar tetap terlihat */
+    }
+
+    /* Container menu */
+    .menu-container {
+        margin-top: 15px;
+    }
+
+    /* List menu tetap dalam container utama */
+    .menu-list {
+        display: flex;
+        gap: 15px;
+        overflow-x: auto;
+        padding: 10px 0;
+    }
+
+    /* Setiap menu-item memiliki border sendiri tetapi tetap dalam container utama */
+    .menu-item {
+    background: white;
+    padding: 10px;
+    text-align: center;
+    width: 180px; /* Pastikan semua kotak memiliki ukuran yang sama */
+    height: 280px; /* Sesuaikan tinggi agar seragam */
+    border-radius: 10px;
+    border: 3px solid #d42a6e;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+    /* Gambar produk dalam menu-item */
+    .menu-item img {
+    width: 100px;  /* Atur lebar gambar */
+    height: 100px; /* Atur tinggi gambar */
+    object-fit: cover; /* Mencegah gambar menjadi gepeng */
+    border-radius: 10px;
+    border: 2px solid #d42a6e;
+}
+
+
+    /* Tombol Edit */
+    .edit-btn {
+    background: #ff1493;
+    color: white;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    width: 80%; /* Tombol edit akan mengikuti lebar kotak */
+    margin-top: auto; /* Memastikan tombol ada di bawah */
+}
+
+
+    .edit-menu {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #ffeed2;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Tombol Tambah Menu */
+    .add-menu {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #66ccff;
+        border: none;
+        padding: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+     body { font-family: Arial, sans-serif; background-color: #ffc0cb; text-align: left; }
+        .edit-btn { background: #ff1493; color: white; padding: 5px; border: none; cursor: pointer; }
+        .popup { display: none; position: fixed; bottom: 50px; left: 50%; transform: translateX(-50%); background: pink; padding: 15px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.2); }
+        .popup button { display: block; margin: 5px 0; width: 100%; background: #ff1493; color: white; border: none; padding: 10px; cursor: pointer; }
+        .popup input { display: none; }
+</style>
+
+
+<script>
+    function toggleEditMenu(button) {
+        let menu = document.getElementById("editMenu");
+        menu.style.display = menu.style.display === "block" ? "none" : "block";
+    }
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const searchBar = document.querySelector(".search-bar");
+
+    searchBar.addEventListener("input", function () {
+        const keyword = searchBar.value.toLowerCase();
+        const menuItems = document.querySelectorAll(".menu-item");
+
+        menuItems.forEach(item => {
+            const menuName = item.querySelector(".menu-name");
+            if (menuName) {
+                const text = menuName.textContent.toLowerCase();
+                if (text.includes(keyword)) {
+                    item.style.display = "block";
+                } else {
+                    item.style.display = "none";
+                }
+            }
+        });
+    });
+});
+
+</script>
+
+<script>
+       let currentMenu = "";
+
+function openPopup(menuId) {
+    currentMenu = document.getElementById(menuId);
+    document.getElementById("popup").style.display = "block";
+    document.body.style.overflow = "hidden"; // Mencegah scroll saat popup muncul
+}
+
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+    document.body.style.overflow = "auto"; // Mengembalikan scroll setelah popup ditutup
+}
+
+function editImage() {
+    document.getElementById("fileInput").click();
+}
+
+function updateImage() {
+    const file = document.getElementById("fileInput").files[0];
+    if (file && currentMenu) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            currentMenu.querySelector("img").src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+    }
+}
+
+function editName() {
+    if (!currentMenu) return;
+    
+    let nameElement = currentMenu.querySelector(".menu-name");
+    let variantElement = currentMenu.querySelector(".menu-type");
+
+    if (nameElement && variantElement) {
+        // Mengambil teks asli tanpa ikon atau elemen tambahan
+        let nameText = nameElement.childNodes[0].textContent.trim();
+        let variantText = variantElement.childNodes[0].textContent.trim();
+        
+        let cleanText = `${nameText} ${variantText}`; // Gabungkan nama dan varian
+
+        let newName = prompt("Masukkan nama menu baru:", cleanText);
+
+        if (newName !== null && newName.trim() !== "") {
+            nameElement.innerText = newName.trim();
+        }
+    }
+}
+
+
+function editPrice() {
+    if (currentMenu) {
+        let priceElement = currentMenu.querySelector(".menu-price");
+        let newPrice = prompt("Masukkan harga baru:", priceElement.innerText);
+        if (newPrice) {
+            priceElement.innerText = newPrice;
+        }
+    }
+}
+
+    </script>
+

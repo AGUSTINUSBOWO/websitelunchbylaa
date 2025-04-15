@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1>Halo <span class="admin-text">Admin</span></h1>
+            <img src="lala.jpg" alt="Admin Profile" class="profile-icon">
+        </header>
+
+        <main>
+            <div class="menu-card" onclick="navigateTo('updateMenu.html')">
+                <h2>UPDATE MENU</h2>
+                <p>Update Menu dan Harga</p>
+                <img src="updatemenu.jpg" alt="Update Menu" class="menu-image">
+            </div>
+
+            <div class="menu-card" onclick="navigateTo('tambahMenu.html')">
+                <h2>TAMBAH MENU</h2>
+                <p>Menambahkan Menu Baru</p>
+                <img src="tambahmenu.jpg" alt="Tambah Menu" class="menu-image">
+            </div>
+
+            <div class="menu-card" onclick="navigateTo('rekapPenjualan.html')">
+                <h2>REKAP PENJUALAN</h2>
+                <p>Memonitoring Laporan Penjualan</p>
+                <img src="rekapjual1.jpg" alt="Rekap Penjualan" class="menu-image">
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>
